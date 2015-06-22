@@ -91,6 +91,9 @@ module Sablon
       end
 
       class SimpleField < MergeField
+
+        attr_reader :node
+
         def initialize(node)
           super()
           @node = node
